@@ -9,62 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-            colors: {
-              brand: {
-                900: "#1e293b",
-                800: "#334155",
-                700: "#475569",
-                600: "#2563eb",
-                500: "#3b82f6",
-                50: "#f8fafc",
-              },
-            },
-            animation: {
-              "zoom-slow": "zoom 20s linear infinite alternate",
-            },
-            keyframes: {
-              zoom: {
-                "0%": { transform: "scale(1)" },
-                "100%": { transform: "scale(1.15)" },
-              },
-            },
-          },
-        },
-      };
-    </script>
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
+      html { scroll-behavior: smooth; }
       body {
         font-family: "Inter", sans-serif;
         background-color: #f8fafc;
         color: #1e293b;
       }
-      .print-page-break {
-        page-break-before: always;
-      }
+      .print-page-break { page-break-before: always; }
       @media print {
-        .no-print {
-          display: none !important;
-        }
-        .print-only {
-          display: block !important;
-        }
+        .no-print { display: none !important; }
+        .print-only { display: block !important; }
       }
     </style>
-
-    <!-- ✅ Only include the bundled Vite output -->
-    <script type="module" crossorigin src="/assets/index-DVqalnYj.js"></script>
   </head>
   <body>
     <div id="root"></div>
+    <!-- ✅ Point to source entry, not built file -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
