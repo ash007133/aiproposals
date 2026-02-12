@@ -14,5 +14,9 @@
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ash007133/aiproposals.git"
   }
 }
