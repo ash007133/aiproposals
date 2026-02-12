@@ -15,10 +15,10 @@
             },
             colors: {
               brand: {
-                900: '#1e293b', // Dark Slate (Primary)
+                900: '#1e293b',
                 800: '#334155',
                 700: '#475569',
-                600: '#2563eb', // Blue Accent
+                600: '#2563eb',
                 500: '#3b82f6',
                 50: '#f8fafc',
               }
@@ -37,38 +37,32 @@
       }
     </script>
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
+      html { scroll-behavior: smooth; }
       body {
         font-family: 'Inter', sans-serif;
         background-color: #f8fafc;
         color: #1e293b;
       }
-      .print-page-break {
-        page-break-before: always;
-      }
+      .print-page-break { page-break-before: always; }
       @media print {
-        .no-print {
-          display: none !important;
-        }
-        .print-only {
-          display: block !important;
-        }
+        .no-print { display: none !important; }
+        .print-only { display: block !important; }
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-  }
-}
-</script>
-</head>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
+    <!-- ✅ This is the missing line -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
